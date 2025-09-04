@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname)); // serve static files (like index.html)
+app.use(express.static(__dirname)); 
 
 app.post('/register', (req, res) => {
   const { name, email, phone } = req.body;

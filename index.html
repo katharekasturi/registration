@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background:#3E0703;
+    }
+    form {
+      background:#FFF0C4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      width: 500px;
+    }
+    h2 { text-align: center; }
+    input, button {
+      width: 95%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background: #0056b3;
+      cursor: pointer;
+    }
+    .top-right-image {
+      position: absolute;      
+      top: 20px;               
+      right: 20px;             
+      width: 50px;            
+      height: 50px;            ;           
+    }
+    h1 {
+      position: absolute;
+      top: 20px;
+      text-align: center;
+      width: 100%;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+   
+  </style>
+</head>
+<body>
+<h1><b>GDG'S INFO SESSION</b></h1>
+<img src="image.png" alt="logo" class="top-right-image"> 
+  <form action="/register" method="POST">
+    <h2>REGISTER NOW</h2>
+    <input type="text" name="name" placeholder="Full Name" pattern="^[^\d]+$" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

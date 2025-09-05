@@ -1,1 +1,12 @@
-
+{
+  "name": "express-web-app",
+  "version": "1.0.0",
+  "description": "Simple Express web app for Render deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -19,7 +19,7 @@ app.get("/hello", (req, res) => {
 
 // POST route
 app.post('/register', (req, res) => {
-  console.log('➡️ Inside /register route');
+  console.log('Inside /register route');
 
   const { name, email, phone } = req.body;
   console.log('Form data:', req.body); 
@@ -35,6 +35,7 @@ app.post('/register', (req, res) => {
       console.error('Failed to parse existing data.json');
     }
   }
+
   existingData.push(newData);
   fs.writeFileSync(filePath, JSON.stringify(existingData, null, 2));
 
